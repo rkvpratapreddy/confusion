@@ -13,21 +13,21 @@ class Main extends Component {
     }
   }
   onDishSelect(dishId) {
-    this.setState({selectedDish: dishId})
-}
+    this.setState({ selectedDish: dishId })
+  }
 
   render() {
     return (
       <div>
-      <Navbar dark color="primary">
+        <Navbar dark color="primary">
           <div className="container">
             <NavbarBrand>Restorante Con Fusion</NavbarBrand>
           </div>
-      </Navbar>
-      <Menu dishes={this.state.dishes}
+        </Navbar>
+        <Menu dishes={this.state.dishes}
           onClick={(dishId) => this.onDishSelect(dishId)}></Menu>
-      <DishDetail 
-          dish={this.state.dishes.filter((dish) =>  dish.id === this.state.selectedDish)[0]} />
+        <DishDetail
+          dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
       </div>
     );
   }
