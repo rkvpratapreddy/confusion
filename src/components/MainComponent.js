@@ -27,28 +27,8 @@ class Main extends Component {
     }
     return (
       <div>
-        {/* <Navbar dark color="primary">
-          <div className="container">
-            <NavbarBrand>Restorante Con Fusion</NavbarBrand>
-          </div>
-        </Navbar>
-        <Menu dishes={this.state.dishes}
-          onClick={(dishId) => this.onDishSelect(dishId)}></Menu>
-        <DishDetail
-          dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} /> */}
-        
-            {/* <Routes>
-              <Route path='/home' element={HomePage} />
-              <Route exact path='/menu' element={() => <Menu dishes={this.state.dishes} />} />
-              <Route to="/" element={<Navigate replace to="/home" />}/>
-              </Routes> */}
-              
+       
               <Header />
-                {/* <Routes>
-                  <Route path='/home' component={HomePage} />
-                  <Route exact path='/menu' component={() => <Menu dishes={this.state.dishes} />} />
-                  <Route to="/" component={<Navigate replace to="/home" />}/>
-                </Routes> */}
                 <Routes>
                   <Route path='/home' element={HomePage} />
                   <Route exact path='/menu' element={() => <Menu dishes={this.state.dishes} />} />
